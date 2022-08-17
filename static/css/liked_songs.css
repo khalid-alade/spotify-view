@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+html{
+    background-color: rgb(24, 24, 24);
+}
+.allWrapper{
+    width: 100vw;
+    /* height: 100vh; */
+    /* position: relative; */
+    display: flex;   
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.navBar{
+    width: 19%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+    position: fixed;
+}
+.bodyEvent{
+    width: 81%;
+    /* height: 100%; */
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.appLink{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.appDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.appDiv svg{
+    transform: scale(2.5);
+}
+.appDiv span{
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 19px;
+}
+.menuLinks{
+    display: block;
+    height: 7%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.menuLinks:nth-of-type(5){
+    margin-top: 10%;
+}
+
+/* #lastDiv::after{
+    content: '';
+    position: absolute; 
+    display: block;
+    width: 90px;
+    height: 20px;
+    margin-top: 10px;
+    color: rgb(38, 38, 38);
+} */
+
+.line{
+    width: 80%;
+    height: 1px;
+    margin-top: 3px;
+    background-color: rgb(107, 104, 104);
+}
+
+.optionDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.menuTexts{
+    font-weight: bolder;
+    font-size: small;
+    margin-left: 4%;
+    color: white;
+}
+
+svg{
+    width: 24px;
+    height: 24px;
+}
+.optionDiv:hover svg{
+    stroke: rgb(34, 209, 34);
+}
+.optionDiv:hover .menuTexts{
+    color: rgb(34, 209, 34);
+}
+
+
+
+.newMusicWrapper{
+    height: 400px;
+    width: 100%;
+    /* background-color: grey; */
+    margin-top: 35px;
+    padding: 20px;
+}
+.newMusicHeader{
+    height: 10%;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.newMusic{
+    /* background-color: grey; */
+    height: 95%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.artistsBox{
+    width: 100%;
+    height: 65px;
+    background-color: rgba(129, 120, 120, 0.1);
+    margin-top: 10px;
+    /* display: flex;
+    flex-direction: column; */
+}
+.artistsBox:hover{
+    background-color: rgba(129, 120, 120, 0.5);
+}
+.artistsLink{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.artistsBoxInner{
+    height: 100%;
+    width: 8%;
+    /* background-color: grey; */
+}
+.artistsImage{
+    height: 100%;
+}
+.artistsBoxInner2{
+    height: 100%;
+    font-size: small;
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.duration{
+    height: 100%;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .artistsBoxInner2 h2{
+    height: 40%;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding-top: 20px;
+    font-size: small;
+    color: rgb(196, 188, 188);
+} */
+.artistsBoxInner2 span{
+    /* display: block;
+    margin-top: 2px; */
+    /* font-size: large; */
+    color: rgb(196, 188, 188);
+}
+.durationSpan{
+    color: rgb(196, 188, 188);
+}

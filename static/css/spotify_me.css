@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.allWrapper{
+    width: 100vw;
+    display: flex;   
+    flex-direction: row;
+}
+html{
+    background-color: rgb(24, 24, 24);
+}
+.navBar{
+    width: 19%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+    position: fixed;
+}
+.bodyEvent{
+    width: 81%;
+    /* height: 100%; */
+    background-color: rgb(24, 24, 24);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.appLink{
+    width: 100%;
+    height: 10%;
+    /* background-color: aquamarine; */
+    margin-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.appDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.appDiv svg{
+    transform: scale(2.5);
+}
+.appDiv span{
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 19px;
+}
+.menuLinks{
+    display: block;
+    height: 7%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.menuLinks:nth-of-type(5){
+    margin-top: 10%;
+}
+
+/* #lastDiv::after{
+    content: '';
+    position: absolute; 
+    display: block;
+    width: 90px;
+    height: 20px;
+    margin-top: 10px;
+    color: rgb(38, 38, 38);
+} */
+
+.line{
+    width: 80%;
+    height: 1px;
+    margin-top: 3px;
+    background-color: rgb(107, 104, 104);
+}
+
+.optionDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    height: 100%;
+}
+/* .optionDiv:nth-of-type(1){
+    border-right: 4px solid rgb(34, 209, 34);
+} */
+
+.menuTexts{
+    font-weight: bolder;
+    font-size: small;
+    margin-left: 4%;
+    color: white;
+}
+
+svg{
+    width: 24px;
+    height: 24px;
+}
+.optionDiv:hover svg{
+    stroke: rgb(34, 209, 34);
+}
+.optionDiv:hover .menuTexts{
+    color: rgb(34, 209, 34);
+}
+
+.intro{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+}
+.you{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatarDivPro{
+    width: 155px;
+    height: 155px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 18px;
+}
+
+.avatarDiv{
+    width: 90%;
+    height: 190px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profilePic{
+    width: 100%;
+}
+.avatarDiv svg{
+    height: 100%;
+    width: 100%;
+}
+.name{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#username{
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+#username:hover{
+    color: rgb(34, 209, 34);
+}
+.youInfo{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.youInfo1{
+    height: 74%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.youInfo2{
+    height: 26%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#logout{
+    display: inline;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 7px 20px 7px 20px;
+    font-size: small;
+    /* width: ; */
+}
+#logout:hover{
+    background-color: white;
+    color: black;
+}
+.youminions{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.minioncount, .playlistlistLink1{
+    color: rgb(34, 209, 34);
+    font-size: x-large;
+}
+.miniontext, .playlistlistLink2{
+    font-size: small;
+    color: rgb(196, 188, 188);
+    margin-top: 10px;
+}
+.playlistlistLink2:hover{
+    text-decoration: underline;
+}
+.newMusicWrapper{
+    height: 400px;
+    width: 100%;
+    /* background-color: grey; */
+    margin-top: 10px;
+    padding: 20px;
+}
+.newMusicHeader{
+    height: 10%;
+    font-size: 23px;
+    font-weight: bolder;
+}
+.newMusic{
+    /* background-color: grey; */
+    height: 95%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.artistsBox{
+    width: 23%;
+    height: 97%;
+    background-color: rgba(129, 120, 120, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    /* display: flex;
+    flex-direction: column; */
+}
+.artistsBox:hover{
+    background-color: rgba(129, 120, 120, 0.5);
+}
+.artistsLink{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.artistsBoxInner{
+    height: 60%;
+    border-radius: 10px;
+    padding-top: 15px;
+    background-color: transparent;
+    overflow: hidden;
+}
+.artistsImage{
+    width: 100%;
+    border-radius: 10px;
+    /* transform: scale(1.4); */
+}
+.artistsBoxInner2{
+    height: 40%;
+    border-radius: 10px;
+    padding-top: 20px;
+    font-size: small;
+}
+/* .artistsBoxInner2 h2{
+    height: 40%;
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding-top: 20px;
+    font-size: small;
+    color: rgb(196, 188, 188);
+} */
+.artistsBoxInner2 span{
+    display: block;
+    margin-top: 5px;
+    font-size: small;
+    color: rgb(196, 188, 188);
+}
