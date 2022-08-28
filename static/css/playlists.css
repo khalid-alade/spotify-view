@@ -310,9 +310,6 @@ svg{
 
 
 @media screen and (max-width:900px){
-    /* .allWrapper{
-        flex-direction: column;
-    } */
     .navBar{
         bottom: 0;
         width: 100vw;
@@ -363,7 +360,6 @@ svg{
         justify-content: flex-start;
     }
     .artistsBox{
-        /* height: 200px; */
         width: 45%;
         margin: 10px;
     }
@@ -397,9 +393,6 @@ svg{
     .artistsBoxInner2 span{
         font-size: xx-small;
     }
-    /* .artistsImage{
-        transform: translateY(-5%);
-    } */
 
 }
 
@@ -415,9 +408,6 @@ svg{
     .newMusic{
         padding: 0;
     }
-    /* #username{
-        transform: translateY(-15px);
-    } */
     .avatarDivPro{
         width: 120px;
         height: 120px;
@@ -447,7 +437,6 @@ svg{
     }
     #username{
         font-size: small;
-        /* transform: translateY(-35px); */
     }
     .youminions{
         padding: 15px;
@@ -480,7 +469,6 @@ svg{
     }
     .newMusic{
         height: unset;
-        /* flex-wrap: nowrap; */
         justify-content: space-between;
     }
     .artistsBox{
@@ -492,7 +480,6 @@ svg{
     }
     #username{
         font-size: small;
-        /* transform: translateY(-35px); */
     }
     .minioncount{
         font-size: large;
@@ -507,10 +494,6 @@ svg{
     .intro{
         transform: translateY(-50px);
     }
-    /* .avatarDivPro{
-        width: 70px;
-        height: 70px;
-    } */
     .minioncount{
         font-size: small;
     }
@@ -538,7 +521,53 @@ svg{
         padding-bottom: 1px;
         border-radius: 0;
     }
-    /* .artistsImage{
-        transform: translateY(-10%);
-    } */
 }
+
+
+@media only screen and (max-width: 1280px) {
+    .appDiv span{
+        font-size: medium;
+    }
+ }
+ @media only screen and (max-width: 1169px) {
+    .appDiv span{
+        font-size: small;
+    }
+ }
+
+
+
+@media only screen and (max-width: 600px) { 
+    .artistsBox{
+        width: 90%;
+        height: 330px;
+    }
+}
+@media only screen and (max-width: 350px) { 
+    .artistsBox{
+        width: 90%;
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .artistsBox{
+        width: 45%;
+        height: 350px;
+    }
+ }
+
+
+ @media only screen and (min-width: 743px) {
+    .artistsBox{
+        width: 45%;
+        height: 515px;
+    }
+ }
+
+@media only screen and (min-width: 1199px) {
+    .artistsBox{
+        width: 30%;
+        height: 460px;
+    }
+ }

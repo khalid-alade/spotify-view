@@ -55,9 +55,10 @@ def me():
         following  = get_request(access_token, "https://api.spotify.com/v1/me/following?type=artist")
         playlists  = get_request(access_token, "https://api.spotify.com/v1/me/playlists")
         first_artist  = get_artist(access_token, '66CXWjxzNUsdJxJ2JdwvnR')
-        second_artist  = get_artist(access_token, '0EmeFodog0BfCgMzAIvKQp')
+        second_artist  = get_artist(access_token, '06HL4z0CvFAxyc27GXpf02')
         third_artist  = get_artist(access_token, '6vWDO969PvNqNYHIOW5v0m')
-        last_artist  = get_artist(access_token, '06HL4z0CvFAxyc27GXpf02')
+        last_artist  = get_artist(access_token, '0EmeFodog0BfCgMzAIvKQp')
+
 
         f_name = first_artist['name']
         f_image = first_artist['images'][0]['url']
