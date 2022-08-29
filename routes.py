@@ -116,6 +116,17 @@ def top_tracks():
         access_token = access_token_holder[0]
 
         top_tracks = get_request(access_token, "https://api.spotify.com/v1/me/top/tracks?time_range=long_term")
+
+        for top_track in top_tracks['items']:
+            raw_time = int(top_track['duration_ms'])
+            ms = raw_time / 1000
+            MinutesGet, SecondsGet = divmod(ms, 60)
+            MinutesGet = round(MinutesGet)
+            SecondsGet = round(SecondsGet)
+            MinutesGet = str(MinutesGet).zfill(2)
+            SecondsGet = str(SecondsGet).zfill(2)
+            pr_time = f"{MinutesGet}:{SecondsGet}"
+            top_track['duration_ms'] = pr_time
         return render_template('top_tracks.html', top_tracks=top_tracks)
         
     return redirect(url_for('login'))
@@ -137,16 +148,18 @@ def recents():
         access_token = access_token_holder[0]
         recents = get_request(access_token, "https://api.spotify.com/v1/me/player/recently-played")
 
-        for duration in recents['items']:
-            for key, value in enumerate(duration['track']):
-                if key == 'duration_ms':
-                    time = value['duration_ms']
-                    milli = int(time)
-                    seconds=(milli/1000)%60
-                    minutes=(milli/(1000*60))%60
-                    new_time = str(minutes) + ':' + str(seconds)
-                    duration['track'][key] = new_time
-                    
+        for recent in recents['items']:
+            raw_time = int(recent['track']['duration_ms'])
+            ms = raw_time / 1000
+            MinutesGet, SecondsGet = divmod(ms, 60)
+            MinutesGet = round(MinutesGet)
+            SecondsGet = round(SecondsGet)
+            MinutesGet = str(MinutesGet).zfill(2)
+            SecondsGet = str(SecondsGet).zfill(2)
+            pr_time = f"{MinutesGet}:{SecondsGet}"
+            recent['track']['duration_ms'] = pr_time
+
+
         return render_template('recents.html', recents=recents)
     return redirect(url_for('login'))
 

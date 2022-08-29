@@ -413,10 +413,10 @@ svg{
         height: 120px;
     }
     .artistsBoxInner{
-        height: 60%;
+        height: 85%;
     }
     .artistsBoxInner2{
-        height: 40%;
+        height: 15%;
     }
 }
 
@@ -540,7 +540,7 @@ svg{
 @media only screen and (max-width: 600px) { 
     .artistsBox{
         width: 90%;
-        height: 330px;
+        height: 400px;
     }
 }
 @media only screen and (max-width: 350px) { 
