@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/playlists.css">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <section class="allWrapper">
+        <div class="navBar">
+            <a href="{{ url_for('me') }}" class="appLink">
+                <div class="appDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="800" width="1200"
+                        viewBox="-33.4974 -55.829 290.3108 334.974">
+                        <path
+                            d="M177.707 98.987c-35.992-21.375-95.36-23.34-129.719-12.912-5.519 1.674-11.353-1.44-13.024-6.958-1.672-5.521 1.439-11.352 6.96-13.029 39.443-11.972 105.008-9.66 146.443 14.936 4.964 2.947 6.59 9.356 3.649 14.31-2.944 4.963-9.359 6.6-14.31 3.653m-1.178 31.658c-2.525 4.098-7.883 5.383-11.975 2.867-30.005-18.444-75.762-23.788-111.262-13.012-4.603 1.39-9.466-1.204-10.864-5.8a8.717 8.717 0 015.805-10.856c40.553-12.307 90.968-6.347 125.432 14.833 4.092 2.52 5.38 7.88 2.864 11.968m-13.663 30.404a6.954 6.954 0 01-9.569 2.316c-26.22-16.025-59.223-19.644-98.09-10.766a6.955 6.955 0 01-8.331-5.232 6.95 6.95 0 015.233-8.334c42.533-9.722 79.017-5.538 108.448 12.446a6.96 6.96 0 012.31 9.57M111.656 0C49.992 0 0 49.99 0 111.656c0 61.672 49.992 111.66 111.657 111.66 61.668 0 111.659-49.988 111.659-111.66C223.316 49.991 173.326 0 111.657 0"
+                            fill="#1ed660" />
+                    </svg>
+                    <span class="AppLinkText">Spotify api app</span>
+                </div>
+            </a>
+
+            <a href="{{ url_for('me') }}" class="menuLinks">
+                <div class="optionDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="9" />
+                        <circle cx="12" cy="10" r="3" />
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                    </svg>
+                    <span class="menuTexts">Me</span>
+                </div>
+            </a>
+
+            <a href="{{ url_for('playlists') }}" class="menuLinks">
+                <div class="optionDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-playlist" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="14" cy="17" r="3" />
+                        <path d="M17 17v-13h4" />
+                        <path d="M13 5h-10" />
+                        <line x1="3" y1="9" x2="13" y2="9" />
+                        <path d="M9 13h-6" />
+                    </svg>
+                    <span class="menuTexts">Playlists</span>
+                </div>
+            </a>
+
+            <a href="{{ url_for('top_tracks') }}" class="menuLinks">
+                <div class="optionDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-music" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="6" cy="17" r="3" />
+                        <circle cx="16" cy="17" r="3" />
+                        <polyline points="9 17 9 4 19 4 19 17" />
+                        <line x1="9" y1="8" x2="19" y2="8" />
+                    </svg>
+                    <span class="menuTexts">Top Tracks</span>
+                </div>
+            </a>
+
+            <a href="{{ url_for('recents') }}" class="menuLinks">
+                <div class="optionDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-rotate-clockwise"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4.05 11a8 8 0 1 1 .5 4m-.5 5v-5h5" />
+                    </svg>
+                    <span class="menuTexts">Recents</span>
+                </div>
+            </a>
+
+            <a href="{{ url_for('episodes') }}" class="menuLinks">
+                <div class="optionDiv">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark" width="24"
+                        height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+                    </svg>
+                    <span class="menuTexts">Your Episodes</span>
+
+                </div>
+            </a>
+
+            <div class="line"></div>
+
+        </div>
+        <div class="bodyEvent">
+
+
+
+
+            <div class="newMusicWrapper">
+                <div class="newMusicHeader">Your Playlists</div>
+
+                <div class="newMusic">
+                    {% for events in playlists['items'] %}
+                    <div class="artistsBox">
+                        <a href="{{ events['external_urls']['spotify'] }}" class="artistsLink">
+                            <div class="artistsBoxInner">
+                                <img class="artistsImage" src="{{ events['images'][0]['url'] }}">
+                            </div>
+                            <div class="artistsBoxInner2">
+                                <h3>{{ events['name'] }}</h3>
+                                <span>{{ events['description'] }}</span>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <script>
+        const link = document.querySelectorAll('.optionDiv')
+        const linkIcon = document.querySelectorAll('svg')
+        const linkText = document.querySelectorAll('.menuTexts')
+
+        const indexedLink = Array.from(link)
+        const indexedLinkIcon = Array.from(linkIcon)
+        const indexedLinkText = Array.from(linkText)
+
+        const current = indexedLink[1]
+        const currentIcon = indexedLinkIcon[2]
+        const currentText = indexedLinkText[1]
+
+        current.style.borderWidth = '1px'
+        current.style.borderStyle = 'solid'
+        current.style.borderColor = 'lime'
+
+        currentText.style.color = 'lime'
+        currentIcon.style.stroke = 'lime'
+
+    </script>
+</body>
+
+</html>
