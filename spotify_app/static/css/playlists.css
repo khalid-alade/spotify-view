@@ -489,7 +489,6 @@ svg {
 
     .artistsBox {
         width: 43%;
-        margin-top: 10px;
     }
 
     .newMusic {
@@ -505,7 +504,6 @@ svg {
 
     .artistsBox {
         width: 42%;
-        margin-top: 10px;
     }
 
     .newMusic {
@@ -584,10 +582,11 @@ svg {
     .artistsBox {
         width: 90%;
         min-height: 400px;
+        margin-top: 25px;
     }
 
     .newMusicHeader {
-        font-size: xx-large;
+        font-size: x-large;
         margin-bottom: 15px;
     }
 
