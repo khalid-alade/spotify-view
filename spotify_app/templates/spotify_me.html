@@ -227,18 +227,14 @@
         const currentIcon = indexedLinkIcon[1]
         const currentText = indexedLinkText[0]
 
-        current.style.borderWidth = '1px'
+        current.style.borderWidth = '3px'
+        current.style.borderRight = '0'
+        current.style.borderLeft = '0'
         current.style.borderStyle = 'solid'
         current.style.borderColor = 'lime'
 
         currentText.style.color = 'lime'
         currentIcon.style.stroke = 'lime'
-
-
-        const logout = document.querySelector('#logout')
-        logout.addEventListener('click', function () {
-            AuthenticationClient.clearCookies(getApplication());
-        })
 
 
     </script>

@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,18 +6,18 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-html{
+
+html {
     background-color: rgb(24, 24, 24);
 }
-.allWrapper{
+
+.allWrapper {
     width: 100vw;
-    /* height: 100vh; */
-    /* position: relative; */
-    display: flex;   
+    display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
 }
-.navBar{
+
+.navBar {
     width: 19%;
     height: 100vh;
     background-color: black;
@@ -29,23 +29,24 @@ html{
     padding-bottom: 2%;
     position: fixed;
 }
-.bodyEvent{
+
+.bodyEvent {
     width: 81%;
-    /* height: 100%; */
     background-color: rgb(24, 24, 24);
     position: absolute;
     right: 0;
     top: 0;
-    /* overflow: hidden; */
 }
-.appLink{
+
+.appLink {
     width: 100%;
     height: 10%;
     margin-bottom: 10%;
     padding-left: 10%;
     padding-right: 10%;
 }
-.appDiv{
+
+.appDiv {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -53,44 +54,37 @@ html{
     width: 100%;
     height: 100%;
 }
-.appDiv svg{
+
+.appDiv svg {
     transform: scale(2.5);
 }
-.appDiv span{
+
+.appDiv span {
     margin-left: 20px;
     text-transform: capitalize;
     font-weight: bolder;
     font-size: 19px;
 }
-.menuLinks{
+
+.menuLinks {
     display: block;
-    height: 7%;
+    height: 11%;
     width: 100%;
     border-bottom: 1px solid black;
 }
 
-.menuLinks:nth-of-type(5){
-    margin-top: 10%;
+.menuLinks:nth-of-type(5) {
+    margin-top: 15%;
 }
 
-/* #lastDiv::after{
-    content: '';
-    position: absolute; 
-    display: block;
-    width: 90px;
-    height: 20px;
-    margin-top: 10px;
-    color: rgb(38, 38, 38);
-} */
-
-.line{
+.line {
     width: 80%;
     height: 1px;
     margin-top: 3px;
     background-color: rgb(107, 104, 104);
 }
 
-.optionDiv{
+.optionDiv {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -101,40 +95,42 @@ html{
     padding-right: 10%;
 }
 
-.menuTexts{
+.menuTexts {
     font-weight: bolder;
     font-size: small;
     margin-left: 4%;
     color: white;
 }
 
-svg{
+svg {
     width: 24px;
     height: 24px;
 }
-.optionDiv:hover svg{
+
+.optionDiv:hover svg {
     stroke: rgb(34, 209, 34);
 }
-.optionDiv:hover .menuTexts{
+
+.optionDiv:hover .menuTexts {
     color: rgb(34, 209, 34);
 }
 
 
 
-.newMusicWrapper{
+.newMusicWrapper {
     height: 400px;
     width: 100%;
-    /* background-color: grey; */
     margin-top: 35px;
     padding: 20px;
 }
-.newMusicHeader{
+
+.newMusicHeader {
     height: 10%;
     font-size: 22px;
     font-weight: bolder;
 }
-.newMusic{
-    /* background-color: grey; */
+
+.newMusic {
     height: 95%;
     padding: 20px;
     display: flex;
@@ -142,30 +138,35 @@ svg{
     align-items: center;
     justify-content: space-between;
 }
-.artistsBox{
+
+.artistsBox {
     width: 100%;
     height: 65px;
     background-color: rgba(129, 120, 120, 0.1);
     margin-top: 10px;
 }
-.artistsBox:hover{
+
+.artistsBox:hover {
     background-color: rgba(129, 120, 120, 0.5);
 }
-.artistsLink{
+
+.artistsLink {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
-.artistsBoxInner{
+
+.artistsBoxInner {
     height: 100%;
     width: 8%;
-    /* background-color: grey; */
 }
-.artistsImage{
+
+.artistsImage {
     height: 100%;
 }
-.artistsBoxInner2{
+
+.artistsBoxInner2 {
     height: 100%;
     font-size: small;
     width: 84%;
@@ -174,28 +175,20 @@ svg{
     justify-content: space-around;
     padding: 10px;
 }
-.duration{
+
+.duration {
     height: 100%;
     width: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* .artistsBoxInner2 h2{
-    height: 40%;
-    background-color: aquamarine;
-    border-radius: 10px;
-    padding-top: 20px;
-    font-size: small;
-    color: rgb(196, 188, 188);
-} */
-.artistsBoxInner2 span{
-    /* display: block;
-    margin-top: 2px; */
-    /* font-size: large; */
+
+.artistsBoxInner2 span {
     color: rgb(196, 188, 188);
 }
-.durationSpan{
+
+.durationSpan {
     color: rgb(196, 188, 188);
 }
 
@@ -210,25 +203,29 @@ svg{
 /* Responsiveness */
 /* Responsiveness */
 
-.bodyEvent{
+.bodyEvent {
     overflow: unset;
 }
-.menuTexts{
+
+.menuTexts {
     text-align: center;
 }
-.navBar{
+
+.navBar {
     z-index: 9999999999999;
 }
-.newMusicWrapper{
+
+.newMusicWrapper {
     height: unset;
     margin-top: 10px;
 }
-.artistsBoxInner2{
+
+.artistsBoxInner2 {
     padding-left: 15px;
 }
 
-@media screen and (max-width:900px){
-    .navBar{
+@media screen and (max-width:900px) {
+    .navBar {
         bottom: 0;
         width: 100vw;
         height: 10vh;
@@ -236,33 +233,41 @@ svg{
         justify-content: center;
         padding: 0;
     }
-    .appLink{
+
+    .appLink {
         display: none;
     }
-    .menuLinks{
+
+    .menuLinks {
         height: 100%;
         width: 20%;
     }
+
     .menuLinks:nth-of-type(5) {
         margin-top: 0;
     }
-    .line{
+
+    .line {
         display: none;
     }
-    .optionDiv{
+
+    .optionDiv {
         flex-direction: column;
         padding: 0;
         justify-content: center;
     }
-    .menuTexts{
+
+    .menuTexts {
         margin-left: 0;
         margin-top: 5%;
     }
-    .bodyEvent{
+
+    .bodyEvent {
         width: 100%;
         padding: 20px;
     }
-    .newMusic{
+
+    .newMusic {
         padding: 0;
         padding-bottom: 10vh;
     }
@@ -270,125 +275,167 @@ svg{
 }
 
 
-@media screen and (max-width:745px){
-    .artistsBox{
+@media screen and (max-width:745px) {
+    .artistsBox {
         height: 55px;
         margin: 10px;
     }
-    #username{
+
+    #username {
         font-size: large;
     }
-        .intro{
-            transform: translateY(-30px);
-            height: 35vh;
-        }
-    #logout{
+
+    .intro {
+        transform: translateY(-30px);
+        height: 35vh;
+    }
+
+    #logout {
         transform: translateY(-30px);
     }
-    .newMusicWrapper{
+
+    .newMusicWrapper {
         padding: 0;
     }
-    .artistsBoxInner{
+
+    .artistsBoxInner {
         width: 10%;
     }
-    .artistsBoxInner2{
+
+    .artistsBoxInner2 {
         width: 78%;
     }
-    .artistsBoxInner2 h3{
+
+    .artistsBoxInner2 h3 {
         font-size: small;
     }
-    .artistsBoxInner2 span{
+
+    .artistsBoxInner2 span {
         font-size: xx-small;
     }
-    .duration{
+
+    .duration {
         margin-right: 5px;
     }
-    .durationSpan{
+
+    .durationSpan {
         font-size: xx-small;
     }
 }
 
-@media screen and (max-width:521px){
-    #username{
-        transform: translateY(-15px);
+@media screen and (max-width:900px) {
+    @media screen and (orientation: landscape) {
+        .navBar {
+            height: 20vh;
+        }
+
+        .intro {
+            height: 48vh;
+        }
     }
 }
 
-@media screen and (max-width:455px){
-    .menuTexts{
-        margin-top: 10px;
+@media screen and (max-width:600px) {
+    .menuLinks {
+        width: 23%;
     }
-    .newMusicHeader{
-        font-size: large;
+
+    .artistsBoxInner2 {
+        height: fit-content;
     }
-    #username{
+
+    .newMusicHeader {
+        font-size: x-large;
+        margin-bottom: 15px;
+    }
+
+    .artistsLink {
+        justify-content: space-between;
+    }
+
+    .duration {
+        width: 14%;
+    }
+
+    .artistsBoxInner2 h3 {
+        font-size: 15px;
+    }
+
+    .artistsBoxInner2 span {
+        font-size: small;
+    }
+
+    .menuLinks:last-of-type {
+        display: none;
+    }
+
+    .navBar {
+        justify-content: space-between;
+    }
+
+    .durationSpan {
+        font-size: medium;
+    }
+
+    svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .artistsBoxInner {
+        width: 16%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artistsBox {
+        min-height: 85px;
+    }
+
+    .artistsBoxInner2 {
+        width: 69%;
+    }
+}
+
+@media screen and (max-width:496px) {
+    .artistsImage {
+        width: 100%;
+        height: unset;
+    }
+}
+
+@media screen and (max-width:395px) {
+    #username {
         font-size: small;
         transform: translateY(-35px);
     }
-    .youminions{
-        padding: 15px;
-    }
-    .minioncount, .playlistlistLink1{
-        font-size: large;
-    }
-    .miniontext, .playlistlistLink2{
-        font-size: x-small;
-    }
-    #logout{
-        transform: translateY(-40px);
-        font-size: x-small;
-    }
-    .intro{
-        transform: translateY(-50px);
-    }
-    .artistsBoxInner2 h3{
-        font-size: x-small;
-    }
-    .artistsBoxInner2 span{
-        font-size: xx-small;
-    }
-    .artistsBoxInner{
-        width: 15%;
-    }
-    .artistsBoxInner2{
-        width: 72%;
-    }
-}
 
-@media screen and (max-width:395px){
-    .menuTexts{
-        font-size: x-small;
-    }
-    #username{
-        font-size: small;
-        transform: translateY(-35px);
-    }
-    .minioncount{
+    .minioncount {
         font-size: large;
     }
-    .miniontext, .playlistlistLink2{
+
+    .miniontext,
+    .playlistlistLink2 {
         font-size: xx-small;
     }
-    #logout{
+
+    #logout {
         font-size: x-small;
     }
-    .intro{
+
+    .intro {
         transform: translateY(-50px);
     }
-    .optionDiv:last-of-type{
+
+    .optionDiv:last-of-type {
         padding: 5px;
     }
-    .artistsBoxInner{
-        width: 20%;
-    }
-    .artistsBoxInner2{
-        width: 70%;
-    }
 }
 
-@media screen and (max-width:325px){
-    .menuTexts{
-        font-size: xx-small;
+@media screen and (max-width:325px) {
+    .menuTexts {
+        font-size: x-small;
     }
 
 }
