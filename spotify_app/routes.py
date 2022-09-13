@@ -66,7 +66,7 @@ def refreshAuth():
 @app.route('/login', methods=['GET'])
 def login():
     authentication_request_params = {
-    'client_id': SPOTIPY_CLIENT_ID,'response_type': 'code','redirect_uri': 'http://127.0.0.1:5000/profile',
+    'client_id': SPOTIPY_CLIENT_ID,'response_type': 'code','redirect_uri': 'spotify-view.herokuapp.com/profile',
     'state': 'RAndomstrinGRandOmstring',"show_dialog": 'true','scope': SCOPE}
     auth_url = 'https://accounts.spotify.com/en/authorize?' + urlencode(authentication_request_params)
 
@@ -76,7 +76,7 @@ def login():
 @app.route('/profile')
 def index():
     auth_token = request.args['code']
-    code_payload = {"grant_type": "authorization_code","code": str(auth_token),"redirect_uri": 'http://127.0.0.1:5000/profile',
+    code_payload = {"grant_type": "authorization_code","code": str(auth_token),"redirect_uri": 'spotify-view.herokuapp.com/profile',
     'client_id': SPOTIPY_CLIENT_ID,'client_secret': SPOTIPY_CLIENT_SECRET,}
     
     post_request = requests.post('https://accounts.spotify.com/api/token', data=code_payload)
